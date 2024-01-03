@@ -1,20 +1,25 @@
 #!/usr/bin/python3
 """
-New function to unock boxex
+Module: unlock_boxes
+
+This module provides a function to determine if all the boxes can be opened.
 """
 
 
 def canUnlockAll(boxes):
-    '''
-    You have n number of locked boxes in front of you.
-    Each box is numbered sequentially from 0 to n - 1
-    and each box may contain keys to the other boxes.
-    Write a method that determines if all the boxes can be opened.
-    '''
+    """
+    Determine if all the boxes can be opened.
 
+    Args:
+    - boxes (List[List[int]]): A list of lists where each sublist\
+        represents a box and contains keys to other boxes.
+
+    Returns:
+    - bool: True if all boxes can be opened, else False.
+    """
     list_keys = [0]
     for i in list_keys:
-        for j in boxes[i]:  # recorro cada caja y anado las keys
+        for j in boxes[i]:
             if j < len(boxes) and j not in list_keys:
                 list_keys.append(j)
         if len(list_keys) == len(boxes):
