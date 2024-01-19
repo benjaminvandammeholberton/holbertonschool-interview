@@ -10,31 +10,31 @@
  */
 heap_t *heap_insert(heap_t **root, int value)
 {
-    heap_t *parent, *newNode;
-    int size;
+	heap_t *parent, *newNode;
+	int size;
 
-    if (!root)
-        return (NULL);
-    if (!*root)
-    {
-        *root = binary_tree_node(NULL, value);
-        return (*root);
-    }
-    size = get_size(*root);
-    parent = get_parent(*root, (size - 1) / 2, 0);
-    newNode = binary_tree_node(parent, value);
-    if (!newNode)
-        return (NULL);
-    if (!parent->left)
-        parent->left = newNode;
-    else
-        parent->right = newNode;
-    while (newNode->parent && newNode->n > parent->n)
-    {
-        newNode = swap_value(parent, newNode);
-        parent = parent->parent;
-    }
-    return (newNode);
+	if (!root)
+		return (NULL);
+	if (!*root)
+	{
+		*root = binary_tree_node(NULL, value);
+		return (*root);
+	}
+	size = get_size(*root);
+	parent = get_parent(*root, (size - 1) / 2, 0);
+	newNode = binary_tree_node(parent, value);
+	if (!newNode)
+		return (NULL);
+	if (!parent->left)
+		parent->left = newNode;
+	else
+		parent->right = newNode;
+	while (newNode->parent && newNode->n > parent->n)
+	{
+		newNode = swap_value(parent, newNode);
+		parent = parent->parent;
+	}
+	return (newNode);
 }
 
 /**
@@ -45,11 +45,11 @@ heap_t *heap_insert(heap_t **root, int value)
  */
 heap_t *swap_value(heap_t *parent, heap_t *child)
 {
-    int temp = child->n;
+	int temp = child->n;
 
-    child->n = parent->n;
-    parent->n = temp;
-    return (parent);
+	child->n = parent->n;
+	parent->n = temp;
+	return (parent);
 }
 
 /**
@@ -59,9 +59,9 @@ heap_t *swap_value(heap_t *parent, heap_t *child)
  **/
 int get_size(heap_t *tree)
 {
-    if (!tree)
-        return (0);
-    return (get_size(tree->left) + get_size(tree->right) + 1);
+	if (!tree)
+		return (0);
+	return (get_size(tree->left) + get_size(tree->right) + 1);
 }
 
 /**
@@ -73,17 +73,17 @@ int get_size(heap_t *tree)
  */
 heap_t *get_parent(heap_t *tree, int size, int index)
 {
-    heap_t *left, *right;
+	heap_t *left, *right;
 
-    if (index == size)
-        return (tree);
-    if (index > size)
-        return (NULL);
+	if (index == size)
+		return (tree);
+	if (index > size)
+		return (NULL);
 
-    left = get_parent(tree->left, size, 2 * index + 1);
-    right = get_parent(tree->right, size, 2 * index + 2);
+	left = get_parent(tree->left, size, 2 * index + 1);
+	right = get_parent(tree->right, size, 2 * index + 2);
 
-    if (left)
-        return (left);
-    return (right);
+	if (left)
+		return (left);
+	return (right);
 }
