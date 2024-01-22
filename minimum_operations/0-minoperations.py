@@ -1,29 +1,24 @@
 #!/usr/bin/python3
-"""Interview 3: Minimum Operations"""
+"""
+This script defines a function minOperations that calculates the sum of prime factors of a given number.
+"""
 
 
 def minOperations(n):
     """
-    Method that calculates the fewest number of operations
-    needed to result in exactly n H characters in the file.
+    Calculate the sum of prime factors of a given number.
+    
+    Parameters:
+    - n (int): The input number
+    
+    Returns:
+    - int: The sum of prime factors
     """
-
-    if n <= 1:
-        return 0
-
-    minOperations = 0
-
-    while n % 2 == 0:
-        minOperations += 2
-        n /= 2
-
-    i = 3
-    while i * i <= n:
+    res = 0
+    i = 2
+    while i <= n:
         while n % i == 0:
-            minOperations += i
-            n /= i
-        i += 2
-    if n > 2:
-        minOperations += n
-
-    return int(minOperations)
+            res += i
+            n = n / i
+        i += 1
+    return res
