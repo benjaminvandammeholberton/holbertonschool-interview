@@ -3,6 +3,7 @@
 This script defines a function minOperations that calculates the sum of prime factors of a given number.
 """
 
+
 def minOperations(n):
     """
     Calculate the sum of prime factors of a given number.
