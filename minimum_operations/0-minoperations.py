@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 """
-This script defines a function minOperations that calculates the sum of prime factors of a given number.
+This script defines a function minOperations that calculates\
+the sum of prime factors of a given number.
 """
 
 
 def minOperations(n):
     """
     Calculate the sum of prime factors of a given number.
-    
+
     Parameters:
     - n (int): The input number
-    
+
     Returns:
     - int: The sum of prime factors
     """
