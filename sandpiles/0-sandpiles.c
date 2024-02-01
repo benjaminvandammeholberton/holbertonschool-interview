@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "sandbox.h"
+#include "sandpiles.h"
 
 /**
  * print_grid - Print 3x3 grid
