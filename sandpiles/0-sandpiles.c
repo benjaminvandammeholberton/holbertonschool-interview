@@ -39,11 +39,11 @@ int is_stable(int grid[3][3])
 		{
 			if (grid[i][j] > 3)
 			{
-				return 1;
+				return (1);
 			}
 		}
 	}
-	return 0;
+	return (0);
 }
 
 /**
@@ -62,12 +62,8 @@ void topple(int grid[3][3])
 		printf("=\n");
 		print_grid(grid);
 		for (i = 0; i < 3; i++)
-		{
 			for (j = 0; j < 3; j++)
-			{
 				temp_grid[i][j] = 0;
-			}
-		}
 		for (i = 0; i < 3; i++)
 		{
 			for (j = 0; j < 3; j++)
@@ -91,12 +87,8 @@ void topple(int grid[3][3])
 			}
 		}
 		for (i = 0; i < 3; i++)
-		{
 			for (j = 0; j < 3; j++)
-			{
 				grid[i][j] = temp_grid[i][j];
-			}
-		}
 	}
 }
 
