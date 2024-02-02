@@ -17,11 +17,12 @@ def canUnlockAll(boxes):
     Returns:
     - bool: True if all boxes can be opened, else False.
     """
-    list_keys = [0]
-    for i in list_keys:
-        for j in boxes[i]:
-            if j < len(boxes) and j not in list_keys:
-                list_keys.append(j)
-        if len(list_keys) == len(boxes):
-            return True
-    return False
+    unboxed = [0]
+
+    for box in unboxed:
+        for key in boxes[box]:
+            if key not in unboxed and key < len(boxes):
+                unboxed.append(key)
+                if len(unboxed) == len(boxes):
+                    return True
+    return False 
