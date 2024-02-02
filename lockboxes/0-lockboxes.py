@@ -25,4 +25,4 @@ def canUnlockAll(boxes):
                 unboxed.append(key)
             if len(unboxed) == len(boxes):
                 return True
-    return False 
+    return False
