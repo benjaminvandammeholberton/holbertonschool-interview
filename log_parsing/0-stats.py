@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" 
-Module that reads stdin line by line and computes metrics
-"""
+"""Task 0. Log parsing"""
 
 import sys
 import re
