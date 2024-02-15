@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task 0. Log parsing"""
+"""Function that reads stdin line by line and computes metrics"""
 
 import sys
 import re
@@ -52,6 +52,7 @@ def computes_metric():
                 print(f"{key}: {value}")
                 if key != 'File size':
                     logs[key] = 0
+
 
 if __name__ == '__main__':
     computes_metric()
