@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Function that reads stdin line by line and computes metrics"""
+"""
+    Function that reads stdin line by line and computes metrics
+"""
 
 import sys
 import re
