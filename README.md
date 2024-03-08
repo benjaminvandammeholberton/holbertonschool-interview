@@ -6,3 +6,6 @@
 - [sandpiles](./sandpiles/)
 - [linked_list_palindrome](./linked_list_palindrome/)
 - [log_parsing](./log_parsing/)
+- [linked_list_cycle](./linked_list_cycle/)
+- [palindrome_integer](./palindrome_integer/)
+- [utf8_validation](./utf8_validation/)
