@@ -9,3 +9,4 @@
 - [linked_list_cycle](./linked_list_cycle/)
 - [palindrome_integer](./palindrome_integer/)
 - [utf8_validation](./utf8_validation/)
+- [slide_line](./slide_line/)
