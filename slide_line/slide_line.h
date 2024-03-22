@@ -1,6 +1,8 @@
 #ifndef _SLIDE_LINE_H_
 #define _SLIDE_LINE_H_
 
+#include <stddef.h>
+
 int SLIDE_LEFT = 0;
 int SLIDE_RIGHT = 1;
 
