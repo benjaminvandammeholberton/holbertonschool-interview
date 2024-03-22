@@ -1,4 +1,5 @@
 #include slide_line.h
+#include <stdef.h>
 
 /**
  * slide_line - Slides and merges an array of integers
