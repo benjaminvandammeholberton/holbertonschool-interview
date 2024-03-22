@@ -1,11 +1,11 @@
-#ifndef _SLIDE_LINE_H_
-#define _SLIDE_LINE_H_
+#ifndef SLIDE_LINE_H
+#define SLIDE_LINE_H
 
 #include <stddef.h>
 
-int SLIDE_LEFT = 0;
-int SLIDE_RIGHT = 1;
+#define SLIDE_LEFT  0
+#define SLIDE_RIGHT 1
 
 int slide_line(int *line, size_t size, int direction);
 
-#endif /* _SLIDE_LINE_H_ */
+#endif /* SLIDE_LINE_H */
