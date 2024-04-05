@@ -27,7 +27,7 @@ def is_safe(x_new, y_new, queens_positions):
 
 def solve_nqueens(N, queens_positions, row=0, solutions=[]):
     """
-   Solves the N-queens problem on a chessboard of size N x N.
+    Solves the N-queens problem on a chessboard of size N x N.
 
     Args:
         N (int): Size of the chessboard and the number of queens to place.
