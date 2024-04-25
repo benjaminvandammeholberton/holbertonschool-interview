@@ -4,7 +4,7 @@ const request = require('request');
 const movieId = process.argv[2];
 
 if (!movieId) {
-  console.log('Usage: /0-starwars_characters.js <MOVIE_ID>');
+  console.log('Usage:  /0-starwars_characters.js <MOVIE_ID>');
   process.exit(1);
 }
 
