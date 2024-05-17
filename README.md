@@ -10,3 +10,4 @@
 - [palindrome_integer](./palindrome_integer/)
 - [utf8_validation](./utf8_validation/)
 - [slide_line](./slide_line/)
+- [advanced_binary_search](./advanced_binary_search/)
